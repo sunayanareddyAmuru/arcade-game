@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+.girls {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  text-align: center;
+  margin-right: 36.5%;
+  margin-left: 36.5%;
+}
+
+.girl1 {
+  width: 15%;
+}
