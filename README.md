@@ -24,11 +24,31 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 -   "Udacity" provided github link <https://github.com/udacity/frontend-nanodegree-arcade-game> in rubic structure and I downloaded the skeleton project  regarding to this game.
 -   I downloaded the zip file and extracted all files from it .
 -   I choose ATOM application and modified the skeleton project to  achieve the game as per Instructions.
--   while modifying I came to know that, mostly the modifications are done in `app.js`.
--   at initial in class `girl` I created a player to play game and fixed its position at the center of canvas.
--   By using (x , y) elements I limited the player moving area. when the player moves to edge then it stops and will not cross it.
--   created three bugs and they moves randomly one after another with different speeds.
--   I created three extra players, so that the person playing that game can choose the player.
--   I created `runs` score in the game.so that when ever the player the `water-block.png` then the score increases.
--   By using `prototype` i `updated` and `rendered` the player.
--   By using `prototype` i `updated` and `rendered` the enemy.
+-   Initially I open the index.html in browser. Then by inspecting the page I can console the code so that I can know the errors.
+-   while modifying I came to know that, mostly the modifications are done in `app.js` file. 
+-   After read all the instructiions, I came to understand that there are some errors while consoling in google console. So i used array as `allEnemies[]` and resolved the errors and I saw canvas when I run the code.
+-   I created class for player as `Girl` and also created objects in it.
+-   I implemented three functions for player. They are
+    +  update()
+    +  render()
+    +  handleInput()
+-   The `update()` function is used to update the player moves. The `render()` function is used to fix the player position.
+-   The `handleInput()` is used to handle the inputs provided by the user.
+-   I used key codes to take moves of the player (sprite) with arrow keys. The key arrows are
+    + left arrow
+    + right arrow
+    + up arrow
+    + down arrow
+-   Left arrow to move left side and it will not work when sprite is near to cross canvas area.
+-   Right arrow to move right side and it will not work when sprite is near to canvas area.
+-   Up arrow to  move upside and it will not work when the sprite is near to canvas.
+-   Down arrow to move downside and it will not work when the sprite is near to cross canvas area.
+-   I implemented two functions for enemy. They are
+   + update()
+   + render()
+-   The `update()` function automatically update the enemy moves based on the based on the speed.
+-   The `render()` function initially fixes the enemy position.
+-   Please, open `index.html` in browser to view the game. 
+-   When the player reaches to water level by escaping the enemy then runs will increase.
+-   I created the different characters at the top of the canvas and these characters will appear.
+-   The user can choose the character to play the game.
